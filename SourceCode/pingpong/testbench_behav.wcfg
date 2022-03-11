@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1275000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/testbench/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/swl_i" type="logic">
+      <obj_property name="ElementShortName">swl_i</obj_property>
+      <obj_property name="ObjectShortName">swl_i</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/swr_i" type="logic">
+      <obj_property name="ElementShortName">swr_i</obj_property>
+      <obj_property name="ObjectShortName">swr_i</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/FSM_state" type="other">
+      <obj_property name="ElementShortName">FSM_state</obj_property>
+      <obj_property name="ObjectShortName">FSM_state</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/led_o" type="array">
+      <obj_property name="ElementShortName">led_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/testbench/led_o[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/led_o[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/testbench/scorel_o" type="array">
+      <obj_property name="ElementShortName">scorel_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scorel_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/scorer_o" type="array">
+      <obj_property name="ElementShortName">scorer_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scorer_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>
