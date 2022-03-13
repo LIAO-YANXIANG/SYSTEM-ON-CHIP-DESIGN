@@ -17,18 +17,19 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/user/pingpong/pingpong.cache/wt [current_project]
-set_property parent.project_path D:/user/pingpong/pingpong.xpr [current_project]
+set_property webtalk.parent_dir D:/pingpong/pingpong.cache/wt [current_project]
+set_property parent.project_path D:/pingpong/pingpong.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo d:/user/pingpong/pingpong.cache/ip [current_project]
+set_property ip_output_repo d:/pingpong/pingpong.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib D:/user/pingpong/pingpong.srcs/sources_1/new/pingpong.vhd
+read_vhdl -library xil_defaultlib D:/pingpong/pingpong.srcs/sources_1/new/pingpong.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -37,8 +38,8 @@ read_vhdl -library xil_defaultlib D:/user/pingpong/pingpong.srcs/sources_1/new/p
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/user/pingpong/pingpong.srcs/constrs_1/new/constraints.xdc
-set_property used_in_implementation false [get_files D:/user/pingpong/pingpong.srcs/constrs_1/new/constraints.xdc]
+read_xdc D:/pingpong/pingpong.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files D:/pingpong/pingpong.srcs/constrs_1/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
