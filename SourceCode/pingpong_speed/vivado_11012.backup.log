@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 15 14:15:54 2022
+# Process ID: 11012
+# Current directory: D:/user/桌面/pingpong_speed
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9888 D:\user\桌面\pingpong_speed\pingpong.xpr
+# Log file: D:/user/桌面/pingpong_speed/vivado.log
+# Journal file: D:/user/桌面/pingpong_speed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/user/桌面/pingpong_speed/pingpong.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 827.645 ; gain = 189.227
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Apr 15 14:16:19 2022] Launched synth_1...
+Run output will be captured here: D:/user/桌面/pingpong_speed/pingpong.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Apr 15 14:18:32 2022] Launched synth_1...
+Run output will be captured here: D:/user/桌面/pingpong_speed/pingpong.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Apr 15 14:20:25 2022] Launched synth_1...
+Run output will be captured here: D:/user/桌面/pingpong_speed/pingpong.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Apr 15 14:21:19 2022] Launched synth_1...
+Run output will be captured here: D:/user/桌面/pingpong_speed/pingpong.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Apr 15 14:22:27 2022] Launched synth_1...
+Run output will be captured here: D:/user/桌面/pingpong_speed/pingpong.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 14:22:50 2022...

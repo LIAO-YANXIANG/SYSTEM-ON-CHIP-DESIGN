@@ -1,0 +1,31 @@
+16:44:41 **** Auto Build of configuration Debug for project test_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../../test_SDK_bsp/ps7_cortexa9_0/include/xparameters.h:190:34: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
+                                  ^
+../src/helloworld.c:22:34: note: in expansion of macro 'XPAR_AXI_GPIO_0_BASEADDR'
+     XGpio_Initialize(&LED_XGpio, XPAR_AXI_GPIO_0_BASEADDR); // ªì©l¤ÆLED_XGpio.
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_SDK_bsp/ps7_cortexa9_0/lib -o "test_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_SDK.elf  |tee "test_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71744	   2596	  23344	  97684	  17d94	test_SDK.elf
+'Finished building: test_SDK.elf.size'
+' '
+
+16:44:42 Build Finished (took 692ms)
+
